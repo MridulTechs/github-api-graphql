@@ -5,10 +5,6 @@ import { GET_REPOSITORY } from "./GraphQL/Query";
 
 import "./App.css";
 
-const token = process.env.REACT_APP_GITHUB_TOKEN;
-
-console.log(token);
-
 const App = () => {
   const { loading, error, data } = useQuery(GET_REPOSITORY, {
     variables: {
